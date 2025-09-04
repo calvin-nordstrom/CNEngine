@@ -3,7 +3,6 @@
 #include "Core.h"
 
 namespace CNEngine {
-
 	class CNENGINE_API Application {
 	public:
 		Application();

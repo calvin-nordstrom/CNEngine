@@ -2,13 +2,8 @@
 
 class SandboxApp : public CNEngine::Application {
 public:
-	SandboxApp() {
-
-	}
-
-	~SandboxApp() {
-
-	}
+	SandboxApp() {}
+	~SandboxApp() {}
 };
 
 CNEngine::Application* CNEngine::CreateApplication() {
