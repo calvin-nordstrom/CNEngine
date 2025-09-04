@@ -1,0 +1,3 @@
+[submodule "CNEngine/vendor/spdlog"]
+	path = CNEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
