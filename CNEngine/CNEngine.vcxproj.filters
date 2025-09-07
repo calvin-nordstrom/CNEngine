@@ -4,6 +4,9 @@
     <Filter Include="CNEngine">
       <UniqueIdentifier>{CC46216E-B813-7C79-E12C-6A21CD58B107}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CNEngine\Events">
+      <UniqueIdentifier>{30D5212F-9C60-8FF3-A571-12E8117CEBF3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CNEngine.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\CNEngine\EntryPoint.h">
       <Filter>CNEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Events\ApplicationEvent.h">
+      <Filter>CNEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Events\Event.h">
+      <Filter>CNEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Events\KeyEvent.h">
+      <Filter>CNEngine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Events\MouseEvent.h">
+      <Filter>CNEngine\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\CNEngine\Log.h">
       <Filter>CNEngine</Filter>
