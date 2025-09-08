@@ -10,6 +10,11 @@ workspace "CNEngine"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+IncludeDir = {}
+IncludeDir["GLFW"] = "CNEngine/vendor/GLFW/include"
+
+include "CNEngine/vendor/GLFW"
+
 project "CNEngine"
 	location "CNEngine"
 	kind "SharedLib"
@@ -30,7 +35,14 @@ project "CNEngine"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"

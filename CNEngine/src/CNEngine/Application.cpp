@@ -5,14 +5,16 @@
 #include "CNEngine/Log.h"
 
 namespace CNEngine {
-	Application::Application() {}
+	Application::Application() {
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
 
-	Application::~Application() {}
+	Application::~Application() {
+	}
 
 	void Application::Run() {
-		WindowResizeEvent e(1280, 720);
-		CNE_CORE_TRACE(e.ToString());
-
-		while (true);
+		while (m_Running) {
+			m_Window->OnUpdate();
+		}
 	}
 }

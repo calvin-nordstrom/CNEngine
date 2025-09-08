@@ -7,6 +7,9 @@
     <Filter Include="CNEngine\Events">
       <UniqueIdentifier>{30D5212F-9C60-8FF3-A571-12E8117CEBF3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CNEngine\Platform">
+      <UniqueIdentifier>{A0E8099B-0CFF-0731-5576-9352C1CBD8B8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\CNEngine.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\CNEngine\Log.h">
       <Filter>CNEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\CNEngine\Platform\WindowsWindow.h">
+      <Filter>CNEngine\Platform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Window.h">
+      <Filter>CNEngine</Filter>
+    </ClInclude>
     <ClInclude Include="src\cnepch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\CNEngine\Log.cpp">
       <Filter>CNEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CNEngine\Platform\WindowsWindow.cpp">
+      <Filter>CNEngine\Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\cnepch.cpp" />
   </ItemGroup>
