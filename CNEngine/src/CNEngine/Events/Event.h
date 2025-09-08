@@ -1,5 +1,6 @@
 #pragma once
 
+#include "cnepch.h"
 #include "CNEngine/Core.h"
 
 namespace CNEngine {
