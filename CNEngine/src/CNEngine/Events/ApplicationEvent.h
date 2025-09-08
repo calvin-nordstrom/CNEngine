@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace CNEngine {
 	class WindowResizeEvent : public Event {
 	public:

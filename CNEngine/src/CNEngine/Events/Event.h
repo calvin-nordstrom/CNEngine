@@ -2,9 +2,6 @@
 
 #include "CNEngine/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace CNEngine {
 	enum class EventType
 	{

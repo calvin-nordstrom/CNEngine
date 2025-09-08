@@ -17,6 +17,9 @@ project "CNEngine"
 	buildoptions{"/utf-8"}
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+
+	pchheader "cnepch.h"
+	pchsource "CNEngine/src/cnepch.cpp"
 	
 	files
 	{
