@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "CNEngine/vendor/GLFW/include"
+IncludeDir["Glad"] = "CNEngine/vendor/Glad/include"
 
 include "CNEngine/vendor/GLFW"
+include "CNEngine/vendor/Glad"
 
 project "CNEngine"
 	location "CNEngine"
@@ -36,12 +38,14 @@ project "CNEngine"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "CNEngine"
 		defines
 		{
 			"CNE_PLATFORM_WINDOWS",
-			"CNE_BUILD_DLL"
+			"CNE_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
