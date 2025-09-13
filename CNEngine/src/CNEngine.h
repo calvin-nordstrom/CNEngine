@@ -3,6 +3,7 @@
 // For use by CNEngine applications
 
 #include "CNEngine/Application.h"
+#include "CNEngine/Layer.h"
 #include "CNEngine/Log.h"
 
 // ---Entry Point-----------------

@@ -84,7 +84,7 @@
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MDd %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -111,7 +111,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -139,7 +139,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>/utf-8 /MD %(AdditionalOptions)</AdditionalOptions>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <ExternalWarningLevel>Level3</ExternalWarningLevel>
     </ClCompile>
@@ -163,6 +163,8 @@
     <ClInclude Include="src\CNEngine\Events\Event.h" />
     <ClInclude Include="src\CNEngine\Events\KeyEvent.h" />
     <ClInclude Include="src\CNEngine\Events\MouseEvent.h" />
+    <ClInclude Include="src\CNEngine\Layer.h" />
+    <ClInclude Include="src\CNEngine\LayerStack.h" />
     <ClInclude Include="src\CNEngine\Log.h" />
     <ClInclude Include="src\CNEngine\Platform\WindowsWindow.h" />
     <ClInclude Include="src\CNEngine\Window.h" />
@@ -170,6 +172,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\CNEngine\Application.cpp" />
+    <ClCompile Include="src\CNEngine\Layer.cpp" />
+    <ClCompile Include="src\CNEngine\LayerStack.cpp" />
     <ClCompile Include="src\CNEngine\Log.cpp" />
     <ClCompile Include="src\CNEngine\Platform\WindowsWindow.cpp" />
     <ClCompile Include="src\cnepch.cpp">
