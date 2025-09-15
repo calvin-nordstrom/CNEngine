@@ -18,6 +18,7 @@ class SandboxApp : public CNEngine::Application {
 public:
 	SandboxApp() {
 		PushLayer(new ExampleLayer());
+		PushOverlay(new CNEngine::ImGuiLayer());
 	}
 
 	~SandboxApp() {}

@@ -7,8 +7,14 @@
     <Filter Include="CNEngine\Events">
       <UniqueIdentifier>{30D5212F-9C60-8FF3-A571-12E8117CEBF3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="CNEngine\ImGui">
+      <UniqueIdentifier>{F6A4EEF9-E272-E2FF-CB06-5326B773BE64}</UniqueIdentifier>
+    </Filter>
     <Filter Include="CNEngine\Platform">
       <UniqueIdentifier>{A0E8099B-0CFF-0731-5576-9352C1CBD8B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CNEngine\Platform\OpenGL">
+      <UniqueIdentifier>{D49D56EB-C0C2-A56B-E90D-8BFBD591A489}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +40,9 @@
     <ClInclude Include="src\CNEngine\Events\MouseEvent.h">
       <Filter>CNEngine\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\CNEngine\ImGui\ImGuiLayer.h">
+      <Filter>CNEngine\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\CNEngine\Layer.h">
       <Filter>CNEngine</Filter>
     </ClInclude>
@@ -42,6 +51,9 @@
     </ClInclude>
     <ClInclude Include="src\CNEngine\Log.h">
       <Filter>CNEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CNEngine\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>CNEngine\Platform\OpenGL</Filter>
     </ClInclude>
     <ClInclude Include="src\CNEngine\Platform\WindowsWindow.h">
       <Filter>CNEngine\Platform</Filter>
@@ -55,6 +67,9 @@
     <ClCompile Include="src\CNEngine\Application.cpp">
       <Filter>CNEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\CNEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>CNEngine\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\CNEngine\Layer.cpp">
       <Filter>CNEngine</Filter>
     </ClCompile>
@@ -63,6 +78,9 @@
     </ClCompile>
     <ClCompile Include="src\CNEngine\Log.cpp">
       <Filter>CNEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CNEngine\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>CNEngine\Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\CNEngine\Platform\WindowsWindow.cpp">
       <Filter>CNEngine\Platform</Filter>
